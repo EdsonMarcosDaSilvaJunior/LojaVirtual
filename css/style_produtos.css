@@ -1,6 +1,6 @@
 body {
   margin: 0; 
-  font-family: Arial, sans-serif;
+  font-family: Arial;
 }
 
 .container {
@@ -17,6 +17,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 10px 0;
+  flex-wrap: wrap;
 }
 
 .produto {
@@ -73,6 +74,7 @@ h1 {
   background-color: #f0f0f0;
   width: 100%;
   margin-top: 0;
+  flex-wrap: wrap;
 }
 
 .rodape_titulos {
@@ -82,4 +84,48 @@ h1 {
 .secoesRodape {
   display: flex;
   align-items: center; 
+  text-align: center;
+}
+
+@media (max-width: 1024px) {
+  .produto {
+    flex-direction: column; 
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .produto img {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .header {
+    flex-direction: column; 
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .preco {
+    font-size: 1.2em; 
+  }
+
+  .botao {
+    width: 100%; 
+    text-align: center;
+  }
+
+  .rodape {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .secoesRodape {
+    flex-direction: column;
+    margin: 10px 0;
+  }
 }
