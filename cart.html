@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - Vista Moda</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0; 
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .carrinho {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+            padding: 20px;
+        }
+
+        .carrinho h2 {
+            text-align: center;
+        }
+
+        .produto {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .produto:last-child {
+            border-bottom: none;
+        }
+
+        .total {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+
+        .finalizar {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="carrinho">
+            <h2>Carrinho de Compras</h2>
+
+            <div class="produto">
+                <span>Camiseta Alce</span>
+                <span>R$ 49,90</span>
+            </div>
+            <div class="produto">
+                <span>Camiseta Alien</span>
+                <span>R$ 49,90</span>
+            </div>
+            <div class="produto">
+                <span>Camiseta Burguer</span>
+                <span>R$ 49,90</span>
+            </div>
+
+            <div class="total">
+                <span>Total</span>
+                <span>R$ 149,70</span>
+            </div>
+
+            <button class="finalizar">Finalizar Compra</button>
+        </div>
+
+        <a href="index.html" class="back-link">
+            <img src="images/home.png" width="30px" height="30px"/>
+        </a>
+    </div>
+</body>
+</html>
