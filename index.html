@@ -1,138 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vista Moda</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Moda - Página Inicial</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .destaque {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+      .sobre-nos {
+        display: grid;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
     <div class="header">
-        <div>
-            <a href="index.html">
-                <img src="images/vista_moda.png" width="200px" height="100px"/>
-            </a>
+      <div>
+        <a href="index.html">
+          <img
+            src="images/vista_moda.png"
+            width="200px"
+            height="100px"
+            alt="Logo Vista Moda"
+          />
+        </a>
+      </div>
+      <div>
+        <input
+          id="pesquisa"
+          name="pesquisa"
+          type="text"
+          placeholder="Pesquisar..."
+        />
+        <input type="submit" value="Pesquisar" />
+      </div>
+      <div id="header_div2">
+        <a href="login.html">
+          <img
+            src="images/user_login.png"
+            width="30px"
+            height="30px"
+            alt="Login"
+          />
+        </a>
+        <a href="cart.html">
+          <img
+            src="images/shopping_cart.png"
+            width="30px"
+            height="30px"
+            alt="Carrinho de Compras"
+          />
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="destaque">
+        <h2>Destaque da Semana: Camisetas com Descontos Incríveis!</h2>
+        <p>
+          Aproveite as melhores ofertas em camisetas selecionadas especialmente
+          para você.
+        </p>
+      </div>
+      <div class="produtos">
+        <div class="produto">
+          <a href="produtos/produto-alce.html">
+            <img src="images/camisetas/Alce/BOR0078.png" alt="Camiseta Alce" />
+          </a>
+          <h3>Camiseta Alce</h3>
+          <p>Camiseta Estilosa de alce.</p>
+          <p class="preco">R$ 49,90</p>
+          <a href="produtos/produto-alce.html">Ver Detalhes</a>
         </div>
-        <div>
-            <input id="pesquisa" name="pesquisa" type="text" placeholder="Pesquisar...">
-            <input type="submit" value="Pesquisar">
+        <div class="produto">
+          <a href="produtos/produto-alien.html">
+            <img
+              src="images/camisetas/Alien Pizza/BOR0092.png"
+              alt="Camiseta Alien"
+            />
+          </a>
+          <h3>Camiseta Alien</h3>
+          <p>Camiseta Estilosa de alien.</p>
+          <p class="preco">R$ 49,90</p>
+          <a href="produtos/produto-alien.html">Ver Detalhes</a>
         </div>
-        <div id="header_div2">
-            <a href="login.html">
-                <img src="images/user_login.png" width="30px" height="30px" alt="Login"/>
-            </a>
-            <a href="cart.html">
-                <img src="images/shopping_cart.png" width="30px" height="30px" alt="Carrinho de Compras"/>
-            </a>
+        <div class="produto">
+          <a href="produtos/produto-burguer.html">
+            <img
+              src="images/camisetas/Burguer/BOR0032.png"
+              alt="Camiseta Burguer"
+            />
+          </a>
+          <h3>Camiseta Burguer</h3>
+          <p>Camiseta Estilosa de hambúrguer.</p>
+          <p class="preco">R$ 49,90</p>
+          <a href="produtos/produto-burguer.html">Ver Detalhes</a>
         </div>
+      </div>
     </div>
 
-    <div class="produtos">
+    <div class="categorias">
+      <div class="produtos">
         <div class="produto">
-            <a href="produtos/produto-alce.html">
-                <img src="images/camisetas/Alce/BOR0078.png" alt="Camiseta Alce">
-            </a>
-            <h3>Camiseta Alce</h3>
-            <p>Camiseta Estilosa de alce.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-alce.html">Ver Detalhes</a>
+          <a href="/listaProdutos.html">
+            <h3>Masculino</h3>
+          </a>
         </div>
         <div class="produto">
-            <a href="produtos/produto-alien.html">
-                <img src="images/camisetas/Alien Pizza/BOR0092.png" alt="Camiseta Alien">
-            </a>
-            <h3>Camiseta Alien</h3>
-            <p>Camiseta Estilosa de alien.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-alien.html">Ver Detalhes</a>
+          <a href="/listaProdutos.html">
+            <h3>Feminino</h3>
+          </a>
         </div>
         <div class="produto">
-            <a href="produtos/produto-burguer.html">
-                <img src="images/camisetas/Burguer/BOR0032.png" alt="Camiseta Burguer">
-            </a>
-            <h3>Camiseta Burguer</h3>
-            <p>Camiseta Estilosa de hambúrguer.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-burguer.html">Ver Detalhes</a>
+          <a href="/listaProdutos.html">
+            <h3>Infantil</h3>
+          </a>
         </div>
-        <div class="produto">
-            <a href="produtos/produto-flower.html">
-                <img src="images/camisetas/Flower/BEG0021.png" alt="Camiseta Flower">
-            </a>
-            <h3>Camiseta Flower</h3>
-            <p>Camiseta Estilosa de flor.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-flower.html">Ver Detalhes</a>
         </div>
-        <div class="produto">
-            <a href="produtos/produto-keep_pushing.html">
-                <img src="images/camisetas/Keep Pushing/BEG0034.png" alt="Camiseta Keep Pushing">
-            </a>
-            <h3>Camiseta Keep Pushing</h3>
-            <p>Camiseta Estilosa de flor.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-keep_pushing.html">Ver Detalhes</a>
-        </div>
-        <div class="produto">
-            <a href="produtos/produto-mickey.html">
-                <img src="images/camisetas/mickey/BOR0127.png" alt="Camiseta Mickey">
-            </a>
-            <h3>Camiseta Mickey</h3>
-            <p>Camiseta Estilosa do mickey.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-mickey.html">Ver Detalhes</a>
-        </div>
-        <div class="produto">
-            <a href="produtos/produto-stitch.html">
-                <img src="images/camisetas/Stitch/BEG0018.png" alt="Camiseta Stitch">
-            </a>
-            <h3>Camiseta Stitch</h3>
-            <p>Camiseta Estilosa do stitch.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-stitch.html">Ver Detalhes</a>
-        </div>
-        <div class="produto">
-            <a href="produtos/produto-urso_azul.html">
-                <img src="images/camisetas/urso azul/BOR0128.png" alt="Camiseta Urso Azul">
-            </a>
-            <h3>Camiseta Urso Azul</h3>
-            <p>Camiseta Estilosa de urso azul.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-urso_azul.html">Ver Detalhes</a>
-        </div>
-        <div class="produto">
-            <a href="produtos/produto-urso.html">
-                <img src="images/camisetas/Urso/BOR0046.png" alt="Camiseta Urso">
-            </a>
-            <h3>Camiseta Urso</h3>
-            <p>Camiseta Estilosa de urso.</p>
-            <p class="preco">R$ 49,90</p>
-            <a href="produtos/produto-urso.html">Ver Detalhes</a>
-        </div>
+      </div>
     </div>
-    
+
+    <div class="sobre-nos">
+      <h2>Sobre Nós</h2>
+      <p>
+        Na Vista Moda, acreditamos que o estilo deve ser acessível e expressivo.
+        Nossa missão é oferecer produtos de alta qualidade que combinem estilo e
+        conforto para todos.
+      </p>
+      <p>
+        Nosso time é dedicado a trazer as últimas tendências e inovações para
+        que você possa se destacar em qualquer ocasião.
+      </p>
+    </div>
+
     <div class="rodape">
-        <div class="secoesRodape">
-            <img src="images/funcionamento.png" width="30px" height="30px"/>
-            <div>
-                <p class="rodape_titulos">ATENDIMENTO</p>
-                <p>Seg. à Sex. das 8h às 12h | 13h às 16h</p>
-            </div>
+      <div class="secoesRodape">
+        <img src="images/funcionamento.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">ATENDIMENTO</p>
+          <p>Seg. à Sex. das 8h às 12h | 13h às 16h</p>
         </div>
-        <div class="secoesRodape">
-            <img src="images/caixa.png" width="30px" height="30px"/>
-            <div>
-                <p class="rodape_titulos">TROCAS E DEVOLUÇÕES</p>
-                <p>Até 7 dias após recebimento para entrar em contato</p>
-            </div>
+      </div>
+      <div class="secoesRodape">
+        <img src="images/caixa.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">TROCAS E DEVOLUÇÕES</p>
+          <p>Até 7 dias após recebimento para entrar em contato</p>
         </div>
-        <div class="secoesRodape">
-            <img src="images/cartao-de-credito.png" width="30px" height="30px"/>
-            <div>
-                <p class="rodape_titulos">PARCELAMENTO</p>
-                <p>Em até 10x no cartão</p>
-            </div>
+      </div>
+      <div class="secoesRodape">
+        <img src="images/cartao-de-credito.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">PARCELAMENTO</p>
+          <p>Em até 10x no cartão</p>
         </div>
+      </div>
+      <div class="secoesRodape">
+        <img src="/images/contato.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">CONTATO</p>
+          <a href="/contato.html">
+            <p>Clique aqui</p>
+          </a>
+        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
