@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vista Moda - Contato</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <style>
+      .contato,
+      .info-contato {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      .redes-sociais{
+        display: flex;
+        justify-content: space-between;
+      }
+      #form {
+        display: grid;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <div>
+        <a href="index.html">
+          <img
+            src="images/vista_moda.png"
+            width="200px"
+            height="100px"
+            alt="Logo Vista Moda"
+          />
+        </a>
+      </div>
+      <div>
+        <input
+          id="pesquisa"
+          name="pesquisa"
+          type="text"
+          placeholder="Pesquisar..."
+        />
+        <input type="submit" value="Pesquisar" />
+      </div>
+      <div id="header_div2">
+        <a href="login.html">
+          <img
+            src="images/user_login.png"
+            width="30px"
+            height="30px"
+            alt="Login"
+          />
+        </a>
+        <a href="cart.html">
+          <img
+            src="images/shopping_cart.png"
+            width="30px"
+            height="30px"
+            alt="Carrinho de Compras"
+          />
+        </a>
+      </div>
+    </div>
+
+    <div class="contato">
+      <div>
+        <h2>Entre em Contato Conosco</h2>
+        <p>
+          Se você tiver dúvidas, sugestões ou precisar de ajuda, preencha o
+          formulário abaixo ou entre em contato diretamente conosco.
+        </p>
+      </div>
+      <div>
+        <form action="/envio-contato" method="post" id="form">
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="assunto">Assunto</label>
+          <input type="text" id="assunto" name="assunto" required />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+          <input type="submit" value="Enviar Mensagem" />
+        </form>
+      </div>
+    </div>
+
+    <div class="info-contato">
+      <h2>Informações de Contato</h2>
+      <p><strong>Telefone:</strong> (47) 1234-5678</p>
+      <p><strong>Email:</strong> contato@vistamoda.com.br</p>
+      <p>
+        <strong>Endereço:</strong> Rua um dois tres quatro
+      </p>
+
+      <h3>Siga-nos nas redes sociais</h3>
+      <div class="redes-sociais">
+        <a href="https://facebook.com/vistamoda" target="_blank">
+          <img src="images/facebook.png" alt="Facebook" width="30px" />
+        </a>
+        <a href="https://instagram.com/vistamoda" target="_blank">
+          <img src="images/instagram.png" alt="Instagram" width="30px" />
+        </a>
+        <a href="https://twitter.com/vistamoda" target="_blank">
+          <img src="images/twitter.png" alt="Twitter" width="30px" />
+        </a>
+      </div>
+    </div>
+
+    <div class="rodape">
+      <div class="secoesRodape">
+        <img src="images/funcionamento.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">ATENDIMENTO</p>
+          <p>Seg. à Sex. das 8h às 12h | 13h às 16h</p>
+        </div>
+      </div>
+      <div class="secoesRodape">
+        <img src="images/caixa.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">TROCAS E DEVOLUÇÕES</p>
+          <p>Até 7 dias após recebimento para entrar em contato</p>
+        </div>
+      </div>
+      <div class="secoesRodape">
+        <img src="images/cartao-de-credito.png" width="30px" height="30px" />
+        <div>
+          <p class="rodape_titulos">PARCELAMENTO</p>
+          <p>Em até 10x no cartão</p>
+        </div>
+      </div>
+      <div class="secoesRodape">
+        <img src="/images/contato.png" width="30px" height="30px">
+        <div>
+          <p class="rodape_titulos">CONTATO</p>
+          <a href="/contato.html">
+              <p>Clique aqui</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
